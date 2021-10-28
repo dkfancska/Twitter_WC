@@ -72,10 +72,9 @@ def twt_to_string(twt_data):
 
 def rr(username=''):
 
-    Path("/images").mkdir(parents=True, exist_ok=True)
     print(username)
 
-    image_path = 'images/result_' + str(username) + '_' + str(random.randint(0, 999)) + '.png'
+    image_path = 'result_' + str(username) + '_' + str(random.randint(0, 999)) + '.png'
     print(image_path)
     mask = np.array(Image.open('data/twitter-logo.jpg'))
     twt_data = twit_data(username)
