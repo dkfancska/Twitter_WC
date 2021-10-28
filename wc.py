@@ -9,7 +9,7 @@ from PIL import ImageDraw
 from PIL import ImageFont
 from pytwitterscraper import TwitterScraper
 from wordcloud import WordCloud
-
+from pathlib import Path
 twit_txt_array = []
 
 
@@ -71,6 +71,8 @@ def twt_to_string(twt_data):
 
 
 def rr(username=''):
+
+    Path("/images").mkdir(parents=True, exist_ok=True)
     print(username)
 
     image_path = 'images/result_' + str(username) + '_' + str(random.randint(0, 999)) + '.png'
