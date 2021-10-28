@@ -32,14 +32,14 @@ if clicked:
             st.empty()
 
         with title_container:
-            try:
+            #try:
                 path = wc.rr(username)
                 image = Image.open(path)
                 st.image(image)
                 wc.rm_file(path)
                 with qq:
                     st.write('Your result')
-            except:
+           # except:
 
                 st.error('Error! User Not Found!')
         st.write("---")
