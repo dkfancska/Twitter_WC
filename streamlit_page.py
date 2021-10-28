@@ -41,7 +41,7 @@ if clicked:
                     st.write('Your result')
            # except:
 
-                st.error('Error! User Not Found!')
+                #st.error('Error! User Not Found!')
         st.write("---")
 
     else:
